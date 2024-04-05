@@ -4,13 +4,16 @@ import styles from "./index.module.css"
 const Wallet = () => {
   return (
     <>
+    <div className={styles.body}>
     <h3 className={styles.heading}>Porte-monnaie</h3>
-    <div>
-    <p>Montant disponible</p>
-    <p>800 FCFA</p>
-    <button>Recharger</button>
+    <div className={styles.box}>
+      <p className={styles.p}>Montant disponible</p>
+    <p className={styles.price}>800 FCFA</p>
+    <button className={styles.button}>Recharger</button>
     </div>
     <p>Liste des Transactions</p>
+    </div>
+    
 
     </>
   )
